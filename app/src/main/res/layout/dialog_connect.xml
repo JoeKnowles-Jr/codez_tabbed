@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/tv_current_connection_label"
+        android:labelFor="@id/tv_current_connection_url"
+        android:text="@string/current_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/tv_current_connection_url"
+        android:layout_below="@id/tv_current_connection_label"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/tv_current_connection_name"
+        android:layout_below="@id/tv_current_connection_url"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/tv_current_connection_description"
+        android:layout_below="@id/tv_current_connection_name"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:id="@+id/hr_connection"
+        android:layout_below="@id/tv_current_connection_description"
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/blue_700" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_conn_input"
+        android:visibility="invisible"
+        android:layout_marginTop="23dp"
+        android:layout_below="@id/hr_connection"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/et_conn_input"
+            android:text="@string/new_connection" />
+
+        <EditText
+            android:id="@+id/et_conn_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:imeOptions="actionDone"
+            android:drawableEnd="@drawable/arrow"
+            android:inputType="textUri" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="23dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/ll_test_result"
+        android:layout_below="@id/ll_conn_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="23dp"
+            android:id="@+id/tv_result_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="23dp"
+            android:id="@+id/tv_result_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="23dp"
+            android:id="@+id/tv_result_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_result_buttons"
+        android:visibility="invisible"
+        android:layout_marginTop="23dp"
+        android:layout_below="@id/ll_test_result"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_save_connection"
+            android:text="@string/save_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_dont_save_connection"
+            android:text="@string/use_but_don_t_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_change"
+            android:text="@string/change"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:text="@string/done"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Codez</string>
+    <string name="access_token" translatable="false" tools:ignore="Typos">pk.eyJ1IjoiamtoaXBwaWUiLCJhIjoiY2pkd3ZwcmZsMXpxNzJwdDN0Zmhxc3p2YyJ9.j0Fgr_VMf4h5sMU0vhHjLw</string>
+
+    <string name="tab_text_1">Local</string>
+    <string name="tab_text_2">Remote</string>
+    <string name="search_here">Search here…</string>
+    <string name="no_codes">No Codes</string>
+    <string name="editcode">Edit Code</string>
+    <string name="addcode">Add Code</string>
+    <string name="button">button</string>
+    <string name="numhint">Number - Use 0 for neighborhood gate</string>
+    <string name="street">Street</string>
+    <string name="code">Codes</string>
+    <string name="notes">Notes</string>
+    <string name="street_name">street name</string>
+    <string name="street_number">street number</string>
+    <string name="set_map_pin_button">set map pin button</string>
+    <string name="save_button">save button</string>
+    <string name="cancel_button">cancel button</string>
+    <string name="delete_button">delete button</string>
+    <string name="map">map</string>
+    <string name="action_connect">Connect</string>
+    <string name="title_connect">Configure Connection</string>
+    <string name="db_connection_string">New connection URL</string>
+    <string name="crud_backend">CRUD Backend</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="move_pin">Move Pin</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="success">Success</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="place_pin">Place Pin</string>
+    <string name="current_connection">Current connection</string>
+    <string name="new_connection">New connection</string>
+    <string name="change">Change</string>
+    <string name="done">Done</string>
+    <string name="save_connection">Save Connection</string>
+    <string name="use_but_don_t_save">Use but don\'t save</string>
+</resources>
